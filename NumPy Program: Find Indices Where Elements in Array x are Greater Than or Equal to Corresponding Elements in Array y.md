@@ -1,4 +1,4 @@
-# # NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
+## NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
 
 ## 🎯 Aim
 To write a Python program using **NumPy** that finds the indices where elements in array `x` are greater than or equal to their corresponding elements in array `y`.
@@ -13,9 +13,26 @@ To write a Python program using **NumPy** that finds the indices where elements 
 5. **Print Indices**: Print the indices where the condition holds true.
 
 ## 🧾 Program
+~~~
+import numpy as np
 
+arr = np.array([[1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]])
+
+new_col = np.array([10, 11, 12])
+
+arr = np.delete(arr, 1, axis=1)
+arr = np.insert(arr, 1, new_col, axis=1)
+
+print("Updated Array:")
+print(arr)
+~~~
 Add code here
 
 ## Output
 
+<img width="1569" height="997" alt="Screenshot 2025-10-20 153843 - Copy" src="https://github.com/user-attachments/assets/770ad0a9-8173-495f-a5de-73c67e9eff40" />
+
 ## Result
+The NumPy program successfully deletes the second column from a given 2D array and inserts a new column at the same position.
